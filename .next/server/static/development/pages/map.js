@@ -118,22 +118,22 @@ var linkStyle = {
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-469174436" + " " + "footer",
+    className: "jsx-336191981" + " " + "footer",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "jsx-469174436",
+    className: "jsx-336191981",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
   }, "Copyright DCAPP 2018. All Rights Reserved."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    styleId: "469174436",
-    css: ".footer.jsx-469174436{position:absolute;bottom:-40px;bottom:0px;background-color:white;margin-top:40px;box-sizing:border-box;max-width:100%;width:100%;margin:0 auto;padding:40px;border:1px solid #DDD;font-size:16px;-webkit-box-shadow:2px 5px 20px -13px rgba(0,0,0,0.55);-moz-box-shadow:2px 5px 20px -13px rgba(0,0,0,0.55);box-shadow:2px 5px 20px -13px rgba(0,0,0,0.55);}.footer.jsx-469174436 p.jsx-469174436{font-size:12px;}@media screen and (min-width:768px){.footer.jsx-469174436 p.jsx-469174436{font-size:16px;}}@media screen and (min-width:920px){.footer.jsx-469174436 p.jsx-469174436{font-size:16px;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYmFiYWsvU2l0ZXMvZGNhcHAvd2ViL2NvbXBzL0Zvb3Rlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXaUIsQUFHd0IsQUFvQkgsQUFzQkMsQUEwQkEsZUEvQ2pCLEFBc0JDLEFBMEJBLEdBcEVhLGFBQ0YsV0FDZSx1QkFDUCxnQkFDTSxzQkFDUCxlQUNKLFdBQ0csY0FDRCxhQUNNLHNCQUNQLGVBRXdDLHVEQUNILG9EQUNMLCtDQUU3QyIsImZpbGUiOiIvVXNlcnMvamJhYmFrL1NpdGVzL2RjYXBwL3dlYi9jb21wcy9Gb290ZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXG5cbmNvbnN0IGxpbmtTdHlsZSA9IHtcblx0bWFyZ2luUmlnaHQ6IDE1XG59XG5cbmNvbnN0IEZvb3RlciA9ICgpID0+IChcblxuICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9vdGVyXCI+XG4gICAgXHQ8cD5Db3B5cmlnaHQgRENBUFAgMjAxOC4gQWxsIFJpZ2h0cyBSZXNlcnZlZC48L3A+XG5cbiAgICBcdDxzdHlsZSBqc3g+e2Bcblx0ICAgICAgLmZvb3RlciB7XG5cdFx0XHRcdFx0cG9zaXRpb246IGFic29sdXRlO1xuXHRcdFx0XHRcdGJvdHRvbTogLTQwcHg7XG5cdFx0XHRcdFx0Ym90dG9tOiAwcHg7XG5cdCAgICAgIFx0YmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5cdCAgICAgIFx0bWFyZ2luLXRvcDogNDBweDtcblx0ICAgICAgXHRib3gtc2l6aW5nOiBib3JkZXItYm94O1xuXHQgICAgICBcdG1heC13aWR0aDogMTAwJTtcblx0ICAgICAgXHR3aWR0aDogMTAwJTtcblx0ICAgICAgXHRtYXJnaW46IDAgYXV0bztcblx0ICAgICAgXHRwYWRkaW5nOiA0MHB4O1xuXHRcdFx0XHRcdGJvcmRlcjogMXB4IHNvbGlkICNEREQ7XG5cdFx0XHRcdFx0Zm9udC1zaXplOiAxNnB4O1xuXG5cdFx0XHRcdFx0LXdlYmtpdC1ib3gtc2hhZG93OiAycHggNXB4IDIwcHggLTEzcHggcmdiYSgwLDAsMCwwLjU1KTtcblx0XHRcdFx0XHQtbW96LWJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdGJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXG5cdCAgICAgIH1cblxuXHRcdFx0XHQuZm9vdGVyIHAge1xuXHRcdFx0XHRcdGZvbnQtc2l6ZTogMTJweDtcblx0XHRcdFx0fVxuXG5cdFx0XHRcdEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG5cblx0XHRcdFx0XHQvLyAuZm9vdGVyIHtcblx0XHQgICAgICAvLyBcdGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuXHRcdCAgICAgIC8vIFx0bWFyZ2luLXRvcDogNDBweDtcblx0XHQgICAgICAvLyBcdGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG5cdFx0ICAgICAgLy8gXHRtYXgtd2lkdGg6IDEwMCU7XG5cdFx0ICAgICAgLy8gXHR3aWR0aDogMTAwJTtcblx0XHQgICAgICAvLyBcdG1hcmdpbjogMCBhdXRvO1xuXHRcdCAgICAgIC8vIFx0cGFkZGluZzogNDBweDtcblx0XHRcdFx0XHQvLyBcdGJvcmRlcjogMXB4IHNvbGlkICNEREQ7XG5cdFx0XHRcdFx0Ly9cblx0XHRcdFx0XHQvLyBcdC13ZWJraXQtYm94LXNoYWRvdzogMnB4IDVweCAyMHB4IC0xM3B4IHJnYmEoMCwwLDAsMC41NSk7XG5cdFx0XHRcdFx0Ly8gXHQtbW96LWJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdC8vIFx0Ym94LXNoYWRvdzogMnB4IDVweCAyMHB4IC0xM3B4IHJnYmEoMCwwLDAsMC41NSk7XG5cdFx0XHRcdFx0Ly9cblx0XHQgICAgICAvLyB9XG5cblx0XHRcdFx0XHQuZm9vdGVyIHAge1xuXHRcdFx0XHRcdFx0Zm9udC1zaXplOiAxNnB4O1xuXHRcdFx0XHRcdH1cblx0XHRcdFx0fVxuXG5cdFx0XHRcdEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDkyMHB4KSB7XG5cblx0XHRcdFx0XHQvLyAuZm9vdGVyIHtcblx0XHRcdFx0XHQvLyBcdHBvc2l0aW9uOiBpbmhlcml0O1xuXHRcdFx0XHRcdC8vIFx0Ym90dG9tOiBpbmhlcml0O1xuXHRcdFx0XHRcdC8vXG5cdFx0XHRcdFx0Ly8gXHRiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcblx0XHRcdFx0XHQvLyBcdG1hcmdpbi10b3A6IDQwcHg7XG5cdFx0XHRcdFx0Ly8gXHRib3gtc2l6aW5nOiBib3JkZXItYm94O1xuXHRcdFx0XHRcdC8vIFx0bWF4LXdpZHRoOiAxMDAlO1xuXHRcdFx0XHRcdC8vIFx0d2lkdGg6IDEwMCU7XG5cdFx0XHRcdFx0Ly8gXHRtYXJnaW46IDAgYXV0bztcblx0XHRcdFx0XHQvLyBcdHBhZGRpbmc6IDQwcHg7XG5cdFx0XHRcdFx0Ly8gXHRib3JkZXI6IDFweCBzb2xpZCAjREREO1xuXHRcdFx0XHRcdC8vXG5cdFx0XHRcdFx0Ly8gXHQtd2Via2l0LWJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdC8vIFx0LW1vei1ib3gtc2hhZG93OiAycHggNXB4IDIwcHggLTEzcHggcmdiYSgwLDAsMCwwLjU1KTtcblx0XHRcdFx0XHQvLyBcdGJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdC8vXG5cdFx0XHRcdFx0Ly8gfVxuXG5cdFx0XHRcdFx0LmZvb3RlciBwIHtcblx0XHRcdFx0XHRcdGZvbnQtc2l6ZTogMTZweDtcblx0XHRcdFx0XHR9XG5cdFx0XHRcdH1cblxuXG4gICAgXHRgfTwvc3R5bGU+XG5cbiAgICA8L2Rpdj5cblxuKVxuXG5leHBvcnQgZGVmYXVsdCBGb290ZXJcbiJdfQ== */\n/*@ sourceURL=/Users/jbabak/Sites/dcapp/web/comps/Footer.js */",
+    styleId: "336191981",
+    css: ".footer.jsx-336191981{position:absolute;bottom:-40px;bottom:0px;background-color:white;margin-top:40px;box-sizing:border-box;max-width:100%;width:100%;margin:0 auto;padding:15px;font-size:16px;-webkit-box-shadow:2px 5px 20px -13px rgba(0,0,0,0.55);-moz-box-shadow:2px 5px 20px -13px rgba(0,0,0,0.55);box-shadow:2px 5px 20px -13px rgba(0,0,0,0.55);}.footer.jsx-336191981 p.jsx-336191981{font-size:12px;}@media screen and (min-width:768px){.footer.jsx-336191981{padding:40px;border:1px solid #DDD;}}@media screen and (min-width:920px){.footer.jsx-336191981 p.jsx-336191981{font-size:16px;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYmFiYWsvU2l0ZXMvZGNhcHAvd2ViL2NvbXBzL0Zvb3Rlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXaUIsQUFHd0IsQUFvQkgsQUFZRSxBQW9DRCxhQW5DTyxFQVp4QixBQWdEQyxHQXBFYSxhQUNGLElBcUNSLE9BcEN1Qix1QkFDUCxnQkFDTSxzQkFDUCxlQUNKLFdBQ0csY0FDRCxhQUVELGVBRXdDLHVEQUNILG9EQUNMLCtDQUU3QyIsImZpbGUiOiIvVXNlcnMvamJhYmFrL1NpdGVzL2RjYXBwL3dlYi9jb21wcy9Gb290ZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXG5cbmNvbnN0IGxpbmtTdHlsZSA9IHtcblx0bWFyZ2luUmlnaHQ6IDE1XG59XG5cbmNvbnN0IEZvb3RlciA9ICgpID0+IChcblxuICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9vdGVyXCI+XG4gICAgXHQ8cD5Db3B5cmlnaHQgRENBUFAgMjAxOC4gQWxsIFJpZ2h0cyBSZXNlcnZlZC48L3A+XG5cbiAgICBcdDxzdHlsZSBqc3g+e2Bcblx0ICAgICAgLmZvb3RlciB7XG5cdFx0XHRcdFx0cG9zaXRpb246IGFic29sdXRlO1xuXHRcdFx0XHRcdGJvdHRvbTogLTQwcHg7XG5cdFx0XHRcdFx0Ym90dG9tOiAwcHg7XG5cdCAgICAgIFx0YmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5cdCAgICAgIFx0bWFyZ2luLXRvcDogNDBweDtcblx0ICAgICAgXHRib3gtc2l6aW5nOiBib3JkZXItYm94O1xuXHQgICAgICBcdG1heC13aWR0aDogMTAwJTtcblx0ICAgICAgXHR3aWR0aDogMTAwJTtcblx0ICAgICAgXHRtYXJnaW46IDAgYXV0bztcblx0ICAgICAgXHRwYWRkaW5nOiAxNXB4O1xuXHRcdFx0XHRcdC8vIGJvcmRlcjogMXB4IHNvbGlkICNEREQ7XG5cdFx0XHRcdFx0Zm9udC1zaXplOiAxNnB4O1xuXG5cdFx0XHRcdFx0LXdlYmtpdC1ib3gtc2hhZG93OiAycHggNXB4IDIwcHggLTEzcHggcmdiYSgwLDAsMCwwLjU1KTtcblx0XHRcdFx0XHQtbW96LWJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdGJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXG5cdCAgICAgIH1cblxuXHRcdFx0XHQuZm9vdGVyIHAge1xuXHRcdFx0XHRcdGZvbnQtc2l6ZTogMTJweDtcblx0XHRcdFx0fVxuXG5cdFx0XHRcdEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG5cblx0XHRcdFx0XHQuZm9vdGVyIHtcblx0XHQgICAgICBcdC8vIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuXHRcdCAgICAgIFx0Ly8gbWFyZ2luLXRvcDogNDBweDtcblx0XHQgICAgICBcdC8vIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG5cdFx0ICAgICAgXHQvLyBtYXgtd2lkdGg6IDEwMCU7XG5cdFx0ICAgICAgXHQvLyB3aWR0aDogMTAwJTtcblx0XHQgICAgICBcdC8vIG1hcmdpbjogMCBhdXRvO1xuXHRcdCAgICAgIFx0cGFkZGluZzogNDBweDtcblx0XHRcdFx0XHRcdGJvcmRlcjogMXB4IHNvbGlkICNEREQ7XG5cblx0XHRcdFx0XHRcdC8vIC13ZWJraXQtYm94LXNoYWRvdzogMnB4IDVweCAyMHB4IC0xM3B4IHJnYmEoMCwwLDAsMC41NSk7XG5cdFx0XHRcdFx0XHQvLyAtbW96LWJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdFx0Ly8gYm94LXNoYWRvdzogMnB4IDVweCAyMHB4IC0xM3B4IHJnYmEoMCwwLDAsMC41NSk7XG5cblx0XHQgICAgICB9XG5cblx0XHRcdFx0XHQvLyAuZm9vdGVyIHAge1xuXHRcdFx0XHRcdC8vIFx0Zm9udC1zaXplOiAxNnB4O1xuXHRcdFx0XHRcdC8vIH1cblx0XHRcdFx0fVxuXG5cdFx0XHRcdEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDkyMHB4KSB7XG5cblx0XHRcdFx0XHQvLyAuZm9vdGVyIHtcblx0XHRcdFx0XHQvLyBcdHBvc2l0aW9uOiBpbmhlcml0O1xuXHRcdFx0XHRcdC8vIFx0Ym90dG9tOiBpbmhlcml0O1xuXHRcdFx0XHRcdC8vXG5cdFx0XHRcdFx0Ly8gXHRiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcblx0XHRcdFx0XHQvLyBcdG1hcmdpbi10b3A6IDQwcHg7XG5cdFx0XHRcdFx0Ly8gXHRib3gtc2l6aW5nOiBib3JkZXItYm94O1xuXHRcdFx0XHRcdC8vIFx0bWF4LXdpZHRoOiAxMDAlO1xuXHRcdFx0XHRcdC8vIFx0d2lkdGg6IDEwMCU7XG5cdFx0XHRcdFx0Ly8gXHRtYXJnaW46IDAgYXV0bztcblx0XHRcdFx0XHQvLyBcdHBhZGRpbmc6IDQwcHg7XG5cdFx0XHRcdFx0Ly8gXHRib3JkZXI6IDFweCBzb2xpZCAjREREO1xuXHRcdFx0XHRcdC8vXG5cdFx0XHRcdFx0Ly8gXHQtd2Via2l0LWJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdC8vIFx0LW1vei1ib3gtc2hhZG93OiAycHggNXB4IDIwcHggLTEzcHggcmdiYSgwLDAsMCwwLjU1KTtcblx0XHRcdFx0XHQvLyBcdGJveC1zaGFkb3c6IDJweCA1cHggMjBweCAtMTNweCByZ2JhKDAsMCwwLDAuNTUpO1xuXHRcdFx0XHRcdC8vXG5cdFx0XHRcdFx0Ly8gfVxuXG5cdFx0XHRcdFx0LmZvb3RlciBwIHtcblx0XHRcdFx0XHRcdGZvbnQtc2l6ZTogMTZweDtcblx0XHRcdFx0XHR9XG5cdFx0XHRcdH1cblxuXG4gICAgXHRgfTwvc3R5bGU+XG5cbiAgICA8L2Rpdj5cblxuKVxuXG5leHBvcnQgZGVmYXVsdCBGb290ZXJcbiJdfQ== */\n/*@ sourceURL=/Users/jbabak/Sites/dcapp/web/comps/Footer.js */",
     __self: this
   }));
 };
@@ -362,42 +362,175 @@ var Layout = function Layout(props) {
 /*!**********************!*\
   !*** ./pages/map.js ***!
   \**********************/
-/*! exports provided: default */
+/*! exports provided: Mappy, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Mappy", function() { return Mappy; });
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _comps_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../comps/Header */ "./comps/Header.js");
 /* harmony import */ var _comps_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../comps/Layout */ "./comps/Layout.js");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! google-maps-react */ "google-maps-react");
+/* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/jbabak/Sites/dcapp/web/pages/map.js";
 
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_comps_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    styleId: "569302319",
-    css: ".map.jsx-569302319{width:100%;height:80vh;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYmFiYWsvU2l0ZXMvZGNhcHAvd2ViL3BhZ2VzL21hcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNYyxBQUtnQixXQUNDLFlBRWIiLCJmaWxlIjoiL1VzZXJzL2piYWJhay9TaXRlcy9kY2FwcC93ZWIvcGFnZXMvbWFwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuLi9jb21wcy9IZWFkZXInXG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBzL0xheW91dCdcblxuZXhwb3J0IGRlZmF1bHQgKCkgPT4gKFxuXHQ8TGF5b3V0PlxuXG5cdFx0PHN0eWxlIGpzeD57YFxuXG5cdFx0XHQubWFwIHtcblxuXHRcdFx0XHR3aWR0aDogMTAwJTtcblx0XHRcdFx0aGVpZ2h0OiA4MHZoO1xuXHRcdFx0XHQvLyBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAyNzY2O1xuXHRcdFx0fVxuXG4gICAgYH08L3N0eWxlPlxuXG5cblx0XHQ8ZGl2IGNsYXNzTmFtZT1cIm1hcFwiPlxuXHRcdFx0XG5cdFx0PC9kaXY+XG5cblx0PC9MYXlvdXQ+XG4pXG4iXX0= */\n/*@ sourceURL=/Users/jbabak/Sites/dcapp/web/pages/map.js */",
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-569302319" + " " + "map",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }));
-});
+
+
+
+var mapStyle = {
+  map: {
+    width: '100%',
+    height: '74.5%',
+    maxHeight: '90%',
+    // maxHeight: '740px',
+    overflow: 'hidden'
+  }
+};
+var Mappy =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Mappy, _React$Component);
+
+  function Mappy() {
+    _classCallCheck(this, Mappy);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Mappy).apply(this, arguments));
+  }
+
+  _createClass(Mappy, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      console.log('test');
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_comps_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+        styleId: "501418187",
+        css: ".map.jsx-501418187{width:100%;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYmFiYWsvU2l0ZXMvZGNhcHAvd2ViL3BhZ2VzL21hcC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE4QmtCLEFBR29CLFdBSUssZ0JBQ2pCIiwiZmlsZSI6Ii9Vc2Vycy9qYmFiYWsvU2l0ZXMvZGNhcHAvd2ViL3BhZ2VzL21hcC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBIZWFkZXIgZnJvbSAnLi4vY29tcHMvSGVhZGVyJ1xuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wcy9MYXlvdXQnXG5pbXBvcnQgeyBNYXAsIEluZm9XaW5kb3csIE1hcmtlciwgR29vZ2xlQXBpV3JhcHBlciB9IGZyb20gJ2dvb2dsZS1tYXBzLXJlYWN0JztcblxuY29uc3QgbWFwU3R5bGUgPSB7XG5cdG1hcDoge1xuXHRcdHdpZHRoOiAnMTAwJScsXG5cdFx0aGVpZ2h0OiAnNzQuNSUnLFxuXHRcdG1heEhlaWdodDogJzkwJScsXG5cdFx0Ly8gbWF4SGVpZ2h0OiAnNzQwcHgnLFxuXHRcdG92ZXJmbG93OiAnaGlkZGVuJ1xuXHR9LFxufVxuXG5cbmV4cG9ydCBjbGFzcyBNYXBweSBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG5cblx0Y29tcG9uZW50V2lsbE1vdW50KCkge1xuXG5cdFx0Y29uc29sZS5sb2coJ3Rlc3QnKTtcblxuXHR9XG5cblx0cmVuZGVyKCkge1xuXG5cdFx0cmV0dXJuIChcblxuXG5cdFx0XHRcdFx0PExheW91dD5cblx0XHRcdFx0XHRcdDxzdHlsZSBqc3g+e2Bcblx0XHRcdFx0XHRcdFx0Lm1hcCB7XG5cdFx0XHRcdFx0XHRcdFx0d2lkdGg6IDEwMCU7XG5cdFx0XHRcdFx0XHRcdFx0Ly8gaGVpZ2h0OiAxMDAlO1xuXHRcdFx0XHRcdFx0XHRcdC8vIG1heC1oZWlnaHQ6NDAwcHg7XG5cdFx0XHRcdFx0XHRcdFx0Ly8gYmFja2dyb3VuZC1jb2xvcjogIzAwMjc2Njtcblx0XHRcdFx0XHRcdFx0XHRvdmVyZmxvdzogaGlkZGVuO1xuXHRcdFx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRcdGB9PC9zdHlsZT5cblxuXG5cdFx0XHRcdFx0XHQ8ZGl2IGNsYXNzTmFtZT1cIm1hcFwiPlxuXHRcdFx0XHRcdFx0XHQ8TWFwXG5cdFx0XHRcdFx0XHRcdFx0Z29vZ2xlPXt0aGlzLnByb3BzLmdvb2dsZX1cblx0XHRcdFx0XHRcdFx0XHRzdHlsZT17bWFwU3R5bGUubWFwfVxuXHRcdFx0XHRcdFx0XHRcdGluaXRpYWxDZW50ZXI9e3tcblx0XHRcdFx0XHRcdFx0XHRcdGxhdDogMjUuMjY3MzY5LFxuXHRcdFx0XHRcdFx0XHRcdFx0bG5nOiA1MS41Mjk0NTFcblx0XHRcdFx0XHRcdFx0XHR9fVxuXHRcdFx0XHRcdFx0XHRcdHpvb209ezE0fVxuXHRcdFx0XHRcdFx0XHQ+XG5cdFx0XHRcdFx0XHRcdFx0PE1hcmtlclxuXHRcdFx0XHRcdFx0XHRcdFx0dGl0bGU9eydUaGUgbWFya2VyYHMgdGl0bGUgd2lsbCBhcHBlYXIgYXMgYSB0b29sdGlwLid9XG5cdFx0XHRcdFx0XHRcdFx0XHRuYW1lPXsnU09NQSd9XG5cdFx0XHRcdFx0XHRcdFx0XHRwb3NpdGlvbj17e2xhdDogMjUuMjYyODExLCBsbmc6IDUxLjUzMjA5NH19IC8+XG5cblx0XHRcdFx0XHRcdFx0XHRcdDxNYXJrZXJcblx0XHRcdFx0XHRcdFx0XHQgICAgbmFtZT17J0RvbG9yZXMgcGFyayd9XG5cdFx0XHRcdFx0XHRcdFx0ICAgIHBvc2l0aW9uPXt7bGF0OiAyNS4yNzAzOTgsIGxuZzogNTEuNTI0NzIzfX0gLz5cblx0XHRcdFx0XHRcdFx0XHQgIDxNYXJrZXIgLz5cblxuXHRcdFx0XHRcdFx0XHRcdFx0PE1hcmtlclxuXHRcdFx0XHRcdFx0XHRcdCAgICBuYW1lPXsnRG9sb3JlcyBwYXJrJ31cblx0XHRcdFx0XHRcdFx0XHQgICAgcG9zaXRpb249e3tsYXQ6IDI1LjMwMjc4NiwgbG5nOiA1MS41MTIyMTJ9fSAvPlxuXHRcdFx0XHRcdFx0XHRcdCAgPE1hcmtlciAvPlxuXG5cdFx0XHRcdFx0XHRcdFx0XHQ8TWFya2VyXG5cdFx0XHRcdFx0XHRcdFx0ICAgIG5hbWU9eydEb2xvcmVzIHBhcmsnfVxuXHRcdFx0XHRcdFx0XHRcdCAgICBwb3NpdGlvbj17e2xhdDogMjUuMjA4OTQ1LCBsbmc6IDUxLjQ0NDU1MX19IC8+XG5cdFx0XHRcdFx0XHRcdFx0ICA8TWFya2VyIC8+XG5cblxuXHRcdFx0XHRcdFx0XHQ8L01hcD5cblxuXHRcdFx0XHRcdFx0PC9kaXY+XG5cblx0XHRcdFx0XHQ8L0xheW91dD5cblxuXG5cblxuXG5cdFx0KTtcblxuXG5cdH1cblxufVxuXG5leHBvcnQgZGVmYXVsdCBHb29nbGVBcGlXcmFwcGVyKHtcbiAgYXBpS2V5OiAnQUl6YVN5QVR4X2RoTHZHQ0s2VHFMMHM4b0JRN3JpMGxJaTlHUFNZJ1xufSkoTWFwcHkpXG4iXX0= */\n/*@ sourceURL=/Users/jbabak/Sites/dcapp/web/pages/map.js */",
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "jsx-501418187" + " " + "map",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Map"], {
+        google: this.props.google,
+        style: mapStyle.map,
+        initialCenter: {
+          lat: 25.267369,
+          lng: 51.529451
+        },
+        zoom: 14,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Marker"], {
+        title: 'The marker`s title will appear as a tooltip.',
+        name: 'SOMA',
+        position: {
+          lat: 25.262811,
+          lng: 51.532094
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Marker"], {
+        name: 'Dolores park',
+        position: {
+          lat: 25.270398,
+          lng: 51.524723
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Marker"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Marker"], {
+        name: 'Dolores park',
+        position: {
+          lat: 25.302786,
+          lng: 51.512212
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Marker"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Marker"], {
+        name: 'Dolores park',
+        position: {
+          lat: 25.208945,
+          lng: 51.444551
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["Marker"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }))));
+    }
+  }]);
+
+  return Mappy;
+}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
+/* harmony default export */ __webpack_exports__["default"] = (Object(google_maps_react__WEBPACK_IMPORTED_MODULE_4__["GoogleApiWrapper"])({
+  apiKey: 'AIzaSyATx_dhLvGCK6TqL0s8oBQ7ri0lIi9GPSY'
+})(Mappy));
 
 /***/ }),
 
@@ -421,6 +554,17 @@ module.exports = __webpack_require__(/*! ./pages/map.js */"./pages/map.js");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Button");
+
+/***/ }),
+
+/***/ "google-maps-react":
+/*!************************************!*\
+  !*** external "google-maps-react" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("google-maps-react");
 
 /***/ }),
 

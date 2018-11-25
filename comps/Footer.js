@@ -20,8 +20,8 @@ const Footer = () => (
 	      	max-width: 100%;
 	      	width: 100%;
 	      	margin: 0 auto;
-	      	padding: 40px;
-					border: 1px solid #DDD;
+	      	padding: 15px;
+					// border: 1px solid #DDD;
 					font-size: 16px;
 
 					-webkit-box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);
@@ -36,25 +36,25 @@ const Footer = () => (
 
 				@media screen and (min-width: 768px) {
 
-					// .footer {
-		      // 	background-color: white;
-		      // 	margin-top: 40px;
-		      // 	box-sizing: border-box;
-		      // 	max-width: 100%;
-		      // 	width: 100%;
-		      // 	margin: 0 auto;
-		      // 	padding: 40px;
-					// 	border: 1px solid #DDD;
-					//
-					// 	-webkit-box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);
-					// 	-moz-box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);
-					// 	box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);
-					//
-		      // }
+					.footer {
+		      	// background-color: white;
+		      	// margin-top: 40px;
+		      	// box-sizing: border-box;
+		      	// max-width: 100%;
+		      	// width: 100%;
+		      	// margin: 0 auto;
+		      	padding: 40px;
+						border: 1px solid #DDD;
 
-					.footer p {
-						font-size: 16px;
-					}
+						// -webkit-box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);
+						// -moz-box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);
+						// box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);
+
+		      }
+
+					// .footer p {
+					// 	font-size: 16px;
+					// }
 				}
 
 				@media screen and (min-width: 920px) {
