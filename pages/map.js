@@ -7,7 +7,7 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 const mapStyle = {
 	map: {
 		width: '100%',
-		// height: '74.5%',
+		height: '100%',
 		maxHeight: '78vh',
 		// maxHeight: '740px',
 		overflow: 'hidden'
@@ -51,25 +51,29 @@ export class Mappy extends React.Component {
 	componentDidMount = () => {
 
 
-
+		
 
 	}
 
-	onMarkerClick = (props, marker, e) =>
-	this.setState({
-		selectedPlace: props,
-		activeMarker: marker,
-		showingInfoWindow: true
-	});
+	onMarkerClick = (props, marker, e) => {
+		this.setState({
+			selectedPlace: props,
+			storeInfo: props.store,
+			phoneNumber: props.store.phoneNumber,
+			description: props.store.description,
+			activeMarker: marker,
+			showingInfoWindow: true
+		});
+	}
 
 	onMapClicked = (props) => {
-	if (this.state.showingInfoWindow) {
-		this.setState({
-			showingInfoWindow: false,
-			activeMarker: null
-		})
-	}
-};
+		if (this.state.showingInfoWindow) {
+			this.setState({
+				showingInfoWindow: false,
+				activeMarker: null
+			})
+		}
+	};
 
 	render() {
 
@@ -86,6 +90,7 @@ export class Mappy extends React.Component {
 										anchor: new google.maps.Point(32,32),
 										scaledSize: new google.maps.Size(64,64)
 									}}
+									store={store}
 									onClick={this.onMarkerClick}
 								 />
 
@@ -101,8 +106,8 @@ export class Mappy extends React.Component {
 						<style jsx>{`
 							.map {
 								width: 100%;
-								// height: 100%;
-								// max-height:400px;
+								height: 100%;
+								// max-height:60%;
 								// background-color: #002766;
 								overflow: hidden;
 							}
@@ -119,7 +124,7 @@ export class Mappy extends React.Component {
 									lat: 25.267369,
 									lng: 51.529451
 								}}
-								zoom={14}
+								zoom={15}
 							>
 								{listItems}
 
@@ -176,6 +181,8 @@ export class Mappy extends React.Component {
 				          visible={this.state.showingInfoWindow}>
 				            <div>
 				              <h1>{this.state.selectedPlace.name}</h1>
+				              <h3>{this.state.phoneNumber}</h3>
+				              <p>{this.state.description}</p>
 				            </div>
 				        </InfoWindow>
 
