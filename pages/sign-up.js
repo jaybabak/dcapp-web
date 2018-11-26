@@ -281,16 +281,17 @@ const SignUp = (props) => (
 			}
 
 			.form-field-text {
-				width:80%;
+				box-sizing: border-box;
+				width:90%;
 				display: block;
 				margin: 0 auto;
 				height: 45px;
 				margin-top: 14px;
 
 				border-radius: 45px;
-				padding-left: 35px;
+				padding-left: 0px;
 				font-weight: 200;
-				// text-align:center;
+				text-align:center;
 				border: 3px solid #2CABFB;
 
 			}
@@ -538,7 +539,7 @@ const SignUp = (props) => (
 					border-radius: 45px;
 					padding-left: 35px;
 					font-weight: 200;
-					// text-align:center;
+					text-align:left;
 					border: 3px solid #2CABFB;
 
 				}
