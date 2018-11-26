@@ -12,6 +12,7 @@ import Link from 'next/link'
 import Header from '../comps/Header'
 import Layout from '../comps/Layout'
 import fetch from 'isomorphic-unfetch'
+import validator from 'validator';
 
 export class SignUp extends React.Component {
 
@@ -19,7 +20,8 @@ export class SignUp extends React.Component {
 		super(props);
 		this.state = {
 			value: '',
-			form: {}
+			form: {},
+			formComplete: false
 		};
 
 		this.handleChange = this.handleChange.bind(this);
@@ -43,15 +45,421 @@ export class SignUp extends React.Component {
     	formData
     });
 
+		console.log(this.state.form);
+
 	}
 
 	handleSubmit(event) {
-		alert('A name was submitted: ' + this.state.value);
+		// alert('A name was submitted: ' + this.state.value);
 		event.preventDefault();
+
+		// console.log(validator.isAlpha('foo@bar.com2323'));
+
+		if(this.state.form.firstname == undefined ||
+			 this.state.form.lastname == undefined ||
+			 this.state.form.email == undefined ||
+			 this.state.form.phonenumber == undefined
+		){
+
+			alert('Check the form for errors!');
+			console.log(this.state.formComplete);
+		}else {
+
+			if(!validator.isEmail(this.state.form.email)){
+				alert('Invalid email: ' + this.state.form.email);
+			}else if (!validator.isAlpha(this.state.form.firstname)) {
+				alert('Invalid first name: ' + this.state.form.firstname);
+			}else if (!validator.isAlpha(this.state.form.lastname)) {
+				alert('Invalid last name: ' + this.state.form.lastname);
+			}else if (!validator.isNumeric(this.state.form.phonenumber)) {
+				alert('Invalid phone number: ' + this.state.form.phonenumber);
+			}else{
+
+				this.setState({formComplete: true});
+
+				// alert('yay succesful submission!');
+
+				console.log(this.state.formComplete);
+
+			}
+
+
+		}
+
+
+
+
 	}
 
 
 	render(){
+
+		var formContainer;
+
+		if(this.state.formComplete == false){
+
+			formContainer = (
+
+				<div className="cta-form-wrapper">
+
+					<style jsx>{`
+
+						.form-field-text {
+							width:65%;
+							display: block;
+							// margin: 0 auto;
+							height: 45px;
+							margin-top: 68px;
+
+							border-radius: 45px;
+							padding-left: 35px;
+							font-weight: 200;
+							// text-align:center;
+							border: 5px solid #2CABFB;
+
+						}
+
+						.cta-link {
+							clear: both;
+							display: block;
+							text-align: center;
+							font-weight: 600;
+							text-decoration:none;
+							margin: 0 auto;
+							margin-top: 40px;
+							margin-bottom:60px;
+							background-color: #102D64;
+							color: white;
+							text-transform: uppercase;
+							// border: 4px solid #2CABFB;
+							width: 40%;
+							padding-left: 60px;
+							padding-right: 60px;
+							padding-top: 13px;
+							padding-bottom: 13px;
+							border-radius: 45px;
+							transition: all 0.4s ease-out;
+							border: 3px solid #ececec;
+						}
+
+						.cta-link:hover {
+							-webkit-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+							-moz-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+							box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+							background-color: white;
+							color: #2CABFB;
+							border: 3px solid #2CABFB;
+							cursor: pointer;
+						}
+
+						.cta-text-wide {
+							display: block;
+							// border-top: 2px solid #c8c8c8;
+							margin-top: 50px;
+							padding-top: 80px;
+							font-size: 23px;
+							text-align: center;
+							line-height: 1.64;
+							font-weight: 700;
+
+						}
+
+						.cta-text-summary {
+							display: block;
+							// border-top: 2px solid #c8c8c8;
+							margin-top: 40px;
+							// padding-top: 80px;
+							font-size: 16px;
+							text-align: left;
+							line-height: 1.64;
+						}
+
+						.field-title {
+							margin-top: 30px;
+							font-size: 36px;
+							text-align: center;
+						}
+
+						.field-summary {
+							width: 75%;
+							margin: 0 auto;
+							margin-top: 15px;
+							text-align: center;
+						}
+
+						.cta-form-wrapper {
+							// width: 70%;
+							// margin: 0 auto;
+							background-color: white;
+							-webkit-box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
+							-moz-box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
+							box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
+							padding-bottom: 10px;
+							margin-bottom: 150px;
+
+							padding-left: 30px;
+							padding-right: 30px;
+
+						}
+
+						.text-label {
+							display: block;
+							text-align: center;
+							margin-top:30px;
+							text-transform: uppercase;
+							font-weight: 600;
+							font-size: 14px;
+						}
+
+						.form-field-text {
+							box-sizing: border-box;
+							width:90%;
+							display: block;
+							margin: 0 auto;
+							height: 45px;
+							margin-top: 14px;
+
+							border-radius: 45px;
+							padding-left: 0px;
+							font-weight: 200;
+							text-align:center;
+							border: 3px solid #2CABFB;
+
+						}
+
+						@media screen and (min-width: 768px) {
+							.cta-text-summary {
+								display: block;
+								// border-top: 2px solid #c8c8c8;
+								margin-top: 40px;
+								margin-bottom: 50px;
+								// padding-top: 80px;
+								font-size: 16px;
+								text-align: center;
+								line-height: 1.64;
+								width: 75%;
+								margin-left: auto;
+								margin-right: auto;
+							}
+						}
+
+						@media screen and (min-width: 902px) {
+
+
+							.cta-link {
+								clear: both;
+								display: block;
+								text-align: center;
+								font-weight: 700;
+								margin: 0 auto;
+								margin-top: 50px;
+								margin-bottom:100px;
+								background-color: #102D64;
+								color: white;
+								text-transform: uppercase;
+								// border: 4px solid #2CABFB;
+								width: 40%;
+								padding-left: 120px;
+								padding-right: 120px;
+								padding-top: 23px;
+								padding-bottom: 23px;
+								border-radius: 45px;
+								transition: all 0.2s;
+								border: 3px solid #ececec;
+							}
+
+							.cta-link:hover {
+								-webkit-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								-moz-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								background-color: white;
+								color: #2CABFB;
+								border: 3px solid #2CABFB;
+								cursor: pointer;
+							}
+
+
+							.field-title {
+								margin-top: 30px;
+								font-size: 36px;
+								text-align: left;
+								padding-right:
+							}
+
+							.field-summary {
+								width: 68%;
+								margin-left: 0;
+								// margin: 0 auto;
+								margin-top: 15px;
+								text-align: left;
+
+							}
+
+
+							.text-label {
+								display: block;
+								text-align: center;
+								margin-top:20px;
+								text-transform: uppercase;
+								font-weight: 600;
+								font-size: 14px;
+							}
+
+							.form-field-text {
+								width:60%;
+								display: block;
+								margin: 0 auto;
+								height: 45px;
+								margin-top: 14px;
+
+								border-radius: 45px;
+								padding-left: 35px;
+								font-weight: 200;
+								text-align:left;
+								border: 3px solid #2CABFB;
+
+							}
+
+							.cta-form-wrapper {
+								padding-left: 20px;
+								padding-right: 20px;
+								width: 70%;
+								margin: 0 auto;
+								background-color: white;
+								-webkit-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								-moz-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								padding-bottom: 10px;
+								margin-bottom: 100px;
+								margin-top: 630px;
+							}
+
+						}
+
+				`}</style>
+
+					<div className="cta-text-wide">Ready to forget about laundry forever?</div>
+					{/* <div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div> */}
+					<div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize.</div>
+					<form onSubmit={this.handleSubmit}>
+						<label className="text-label">First Name</label>
+						<input onChange={this.handleChange} placeholder="Your first name" className="form-field-text" type="text" name="firstname"/>
+
+						<label className="text-label">Last Name</label>
+						<input onChange={this.handleChange} placeholder="Your last name please" className="form-field-text" type="text" name="lastname"/>
+
+						<label className="text-label">Email</label>
+						<input onChange={this.handleChange} placeholder="Enter your email" className="form-field-text" type="text" name="email"/>
+
+						<label className="text-label">Phone Number</label>
+						<input onChange={this.handleChange} placeholder="234-232-6839" className="form-field-text" type="text" name="phonenumber"/>
+
+						<input className="cta-link" type="submit" value="Submit" />
+
+					</form>
+				</div>
+
+			);
+
+		}else {
+
+			formContainer = (
+
+				<div className="cta-form-wrapper">
+
+					<style jsx>{`
+
+						.cta-text-wide {
+							display: block;
+							// border-top: 2px solid #c8c8c8;
+							margin-top: 50px;
+							padding-top: 80px;
+							font-size: 23px;
+							text-align: center;
+							line-height: 1.64;
+							font-weight: 700;
+
+						}
+
+						.cta-text-summary {
+							display: block;
+							// border-top: 2px solid #c8c8c8;
+							margin-top: 40px;
+							// padding-top: 80px;
+							font-size: 16px;
+							text-align: left;
+							line-height: 1.64;
+						}
+
+
+						.cta-form-wrapper {
+							// width: 70%;
+							// margin: 0 auto;
+							background-color: white;
+							-webkit-box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
+							-moz-box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
+							box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
+							padding-bottom: 10px;
+							margin-bottom: 150px;
+
+							padding-left: 30px;
+							padding-right: 30px;
+
+						}
+
+						.arrow-icon {
+							background-color: black;
+							width: 10%;
+							// float:right;
+							float:right;
+						}
+
+						@media screen and (min-width: 768px) {
+							.cta-text-summary {
+								display: block;
+								// border-top: 2px solid #c8c8c8;
+								margin-top: 40px;
+								margin-bottom: 50px;
+								// padding-top: 80px;
+								font-size: 16px;
+								text-align: center;
+								line-height: 1.64;
+								width: 75%;
+								margin-left: auto;
+								margin-right: auto;
+							}
+						}
+
+						@media screen and (min-width: 902px) {
+
+							.cta-form-wrapper {
+								padding-left: 20px;
+								padding-right: 20px;
+								width: 70%;
+								margin: 0 auto;
+								background-color: white;
+								-webkit-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								-moz-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
+								padding-bottom: 10px;
+								margin-bottom: 100px;
+								margin-top: 630px;
+							}
+
+						}
+
+				`}</style>
+
+					<div className="cta-text-wide">Thank You For Signing Up!</div>
+					<div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize.</div>
+					<Link href="/map">
+		        <a><img className="arrow-icon" src="/static/arrow-right-solid.svg" alt="Icon"/></a>
+		      </Link>
+				</div>
+
+			);
+
+		}
 
 		return (
 
@@ -616,43 +1024,10 @@ export class SignUp extends React.Component {
 					</div>
 				</div>
 
-				<div className="cta-form-wrapper">
-					<div className="cta-text-wide">Ready to forget about laundry forever?</div>
-					{/* <div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div> */}
-					<div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize.</div>
-					<form onSubmit={this.handleSubmit}>
-						<label className="text-label">First Name</label>
-						<input value={this.state.form.firstname} onChange={this.handleChange} placeholder="Your first name" className="form-field-text" type="text" name="firstname"/>
-
-						<label className="text-label">Last Name</label>
-						<input value={this.state.form.lastname} onChange={this.handleChange} placeholder="Your last name please" className="form-field-text" type="text" name="lastname"/>
-
-						<label className="text-label">Email</label>
-						<input value={this.state.form.email} onChange={this.handleChange} placeholder="Enter your email" className="form-field-text" type="text" name="email"/>
-
-						<label className="text-label">Phone Number</label>
-						<input value={this.state.phonenumber} onChange={this.handleChange} placeholder="234-232-6839" className="form-field-text" type="text" name="phonenumber"/>
-
-						<input className="cta-link" type="submit" value="Submit" />
-
-						{/* <Link href="/sign-up">
-							<a className="cta-link">Sign Me Up!</a>
-						</Link> */}
-					</form>
-				</div>
+				{formContainer}
 
 			</div>
 
-
-
-					{/* <div className="go-to-map">
-						<div className="intro-text subheading">Visit the map to see our list of Dry Cleaners!</div>
-						<div className="body-text white">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div>
-						<Link href="/map">
-							<a><img className="arrow-icon" src="/static/arrow-right-solid.svg" alt="Icon"/></a>
-						</Link>
-
-					</div> */}
 
 
 
