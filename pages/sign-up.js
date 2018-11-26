@@ -132,9 +132,9 @@ export class SignUp extends React.Component {
 							color: white;
 							text-transform: uppercase;
 							// border: 4px solid #2CABFB;
-							width: 40%;
-							padding-left: 60px;
-							padding-right: 60px;
+							width: 70%;
+							padding-left: 20px;
+							padding-right: 20px;
 							padding-top: 13px;
 							padding-bottom: 13px;
 							border-radius: 45px;
@@ -188,6 +188,7 @@ export class SignUp extends React.Component {
 						}
 
 						.cta-form-wrapper {
+							position: relative;
 							// width: 70%;
 							// margin: 0 auto;
 							background-color: white;
@@ -259,10 +260,10 @@ export class SignUp extends React.Component {
 								text-transform: uppercase;
 								// border: 4px solid #2CABFB;
 								width: 40%;
-								padding-left: 120px;
-								padding-right: 120px;
-								padding-top: 23px;
-								padding-bottom: 23px;
+								// padding-left: 120px;
+								// padding-right: 120px;
+								padding-top: 13px;
+								padding-bottom: 13px;
 								border-radius: 45px;
 								transition: all 0.2s;
 								border: 3px solid #ececec;
@@ -385,6 +386,7 @@ export class SignUp extends React.Component {
 							display: block;
 							// border-top: 2px solid #c8c8c8;
 							margin-top: 40px;
+							margin-bottom: 40px;
 							// padding-top: 80px;
 							font-size: 16px;
 							text-align: left;
@@ -409,7 +411,9 @@ export class SignUp extends React.Component {
 
 						.arrow-icon {
 							background-color: black;
+							background-color: #102D64;
 							width: 10%;
+							padding: 15px;
 							// float:right;
 							float:right;
 						}
@@ -432,6 +436,7 @@ export class SignUp extends React.Component {
 
 						@media screen and (min-width: 902px) {
 
+
 							.cta-form-wrapper {
 								padding-left: 20px;
 								padding-right: 20px;
@@ -442,7 +447,7 @@ export class SignUp extends React.Component {
 								-moz-box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
 								box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
 								padding-bottom: 10px;
-								margin-bottom: 100px;
+								margin-bottom: 300px;
 								margin-top: 630px;
 							}
 
@@ -452,6 +457,9 @@ export class SignUp extends React.Component {
 
 					<div className="cta-text-wide">Thank You For Signing Up!</div>
 					<div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize.</div>
+
+					<div className="cta-text-summary">Visit the Map?</div>
+
 					<Link href="/map">
 		        <a><img className="arrow-icon" src="/static/arrow-right-solid.svg" alt="Icon"/></a>
 		      </Link>
@@ -814,12 +822,12 @@ export class SignUp extends React.Component {
 
 						}
 
-						.arrow-icon {
-							position: absolute;
-							right: 0;
-							bottom: 0;
-
-						}
+						// .arrow-icon {
+						// 	position: absolute;
+						// 	right: 0;
+						// 	bottom: -500px;
+						//
+						// }
 
 						.subheading {
 							text-align: left;
@@ -993,6 +1001,7 @@ export class SignUp extends React.Component {
 						}
 
 						.cta-form-wrapper {
+							position: relative;
 							padding-left: 20px;
 							padding-right: 20px;
 							width: 70%;

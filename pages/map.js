@@ -212,25 +212,41 @@ const LoadingContainer = (props) => (
 <div>
 
 	<style jsx>{`
-		.loading {
-			position: absolute;
-			top: 0;
-			left: 0;
 
+		.loading {
 			width: 100%;
 			height: 100%;
-			font-size: 26px;
-			text-align: center;
-			padding-top: 44vh;
-			// color: white;
-			// background-color: rgba(0, 102, 255, 0.9);
+			padding-top: 30%;
+			padding-left:25px;
+			font-size: 22px;
+					// text-align: center;
 			font-family: 'Montserrat', sans-serif;
-			transition: all 1s ease-out;
 		}
+
+		@media screen and (min-width: 768px) {
+			.loading {
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				width: 100%;
+				height: 100%;
+				font-size: 26px;
+				text-align: center;
+				padding-top: 44vh;
+				color: black;
+				font-family: 'Montserrat', sans-serif;
+				transition: all 1s ease-out;
+			}
+
+		}
+
+
+
 
 	`}</style>
 
-<div className="loading">Loading Results...</div>
+	<div className="loading">Loading Results...</div>
 </div>
 )
 
