@@ -51,7 +51,7 @@ export class Mappy extends React.Component {
 	componentDidMount = () => {
 
 
-		
+
 
 	}
 
@@ -59,8 +59,8 @@ export class Mappy extends React.Component {
 		this.setState({
 			selectedPlace: props,
 			storeInfo: props.store,
-			phoneNumber: props.store.phoneNumber,
-			description: props.store.description,
+			phoneNumber: props.store.phoneNumber ? props.store.phoneNumber : "No Phone Number Found",
+			description: props.store.description ? props.store.description : "No Description Found",
 			activeMarker: marker,
 			showingInfoWindow: true
 		});
@@ -96,9 +96,6 @@ export class Mappy extends React.Component {
 
 							);
 
-
-
-
 		return (
 
 
@@ -112,6 +109,12 @@ export class Mappy extends React.Component {
 								overflow: hidden;
 							}
 
+							.loading {
+								width: 400px;
+								height: 300px;
+								background-color: red;
+							}
+
 						`}</style>
 
 
@@ -120,11 +123,12 @@ export class Mappy extends React.Component {
 							<Map
 								google={this.props.google}
 								style={mapStyle.map}
+								// options={mapOptions}
 								initialCenter={{
 									lat: 25.267369,
 									lng: 51.529451
 								}}
-								zoom={15}
+								zoom={14}
 							>
 								{listItems}
 
@@ -137,7 +141,7 @@ export class Mappy extends React.Component {
 							      anchor: new google.maps.Point(32,32),
 							      scaledSize: new google.maps.Size(64,64)
 							    }}
-									onClick={this.onMarkerClick}
+									// onClick={this.onMarkerClick}
 								 />
 
 								<Marker
@@ -148,7 +152,7 @@ export class Mappy extends React.Component {
 										anchor: new google.maps.Point(32,32),
 										scaledSize: new google.maps.Size(64,64)
 									}}
-									onClick={this.onMarkerClick}
+									// onClick={this.onMarkerClick}
 								/>
 							  <Marker />
 
@@ -160,7 +164,7 @@ export class Mappy extends React.Component {
 										anchor: new google.maps.Point(32,32),
 										scaledSize: new google.maps.Size(64,64)
 									}}
-									onClick={this.onMarkerClick}
+									// onClick={this.onMarkerClick}
 								 />
 							  <Marker />
 
@@ -172,7 +176,7 @@ export class Mappy extends React.Component {
 										anchor: new google.maps.Point(32,32),
 										scaledSize: new google.maps.Size(64,64)
 									}}
-									onClick={this.onMarkerClick}
+									// onClick={this.onMarkerClick}
 								/>
 							  <Marker />
 
@@ -203,6 +207,34 @@ export class Mappy extends React.Component {
 
 }
 
+
+const LoadingContainer = (props) => (
+<div>
+
+	<style jsx>{`
+		.loading {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+			font-size: 26px;
+			text-align: center;
+			padding-top: 44vh;
+			// color: white;
+			// background-color: rgba(0, 102, 255, 0.9);
+			font-family: 'Montserrat', sans-serif;
+			transition: all 1s ease-out;
+		}
+
+	`}</style>
+
+<div className="loading">Loading Results...</div>
+</div>
+)
+
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyATx_dhLvGCK6TqL0s8oBQ7ri0lIi9GPSY'
+  apiKey: 'AIzaSyATx_dhLvGCK6TqL0s8oBQ7ri0lIi9GPSY',
+	LoadingContainer: LoadingContainer
 })(Mappy)

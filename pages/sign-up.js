@@ -6,7 +6,8 @@
 // import Button from '@material-ui/core/Button';
 // import IconButton from '@material-ui/core/IconButton';
 // import MenuIcon from '@material-ui/icons/Menu';
-
+import React from 'react'
+import axios from 'axios'
 import Link from 'next/link'
 import Header from '../comps/Header'
 import Layout from '../comps/Layout'
@@ -35,7 +36,7 @@ const SignUp = (props) => (
     	.left-side {
     		float: left;
     		// padding-top: 150px;
-    		width: 50%;
+    		width: 70%;
     		display: inline-block
     	}
 
@@ -197,6 +198,7 @@ const SignUp = (props) => (
         font-size: 23px;
         text-align: center;
         line-height: 1.64;
+				font-weight: 700;
 
       }
 
@@ -269,6 +271,30 @@ const SignUp = (props) => (
         margin-right: 30px;
       }
 
+			.text-label {
+				display: block;
+				text-align: center;
+				margin-top:30px;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 14px;
+			}
+
+			.form-field-text {
+				width:80%;
+				display: block;
+				margin: 0 auto;
+				height: 45px;
+				margin-top: 14px;
+
+				border-radius: 45px;
+				padding-left: 35px;
+				font-weight: 200;
+				// text-align:center;
+				border: 3px solid #2CABFB;
+
+			}
+
       @media screen and (min-width: 768px) {
         .cta-text-summary {
           display: block;
@@ -279,6 +305,9 @@ const SignUp = (props) => (
           font-size: 16px;
           text-align: center;
           line-height: 1.64;
+					width: 75%;
+					margin-left: auto;
+					margin-right: auto;
         }
         .arrow-icon {
           width: 15%;
@@ -381,7 +410,7 @@ const SignUp = (props) => (
         }
 
         .white-square {
-          width:87%;
+          width:37%;
           min-height: 700px;
           // min-height: 60%;
           position: absolute;
@@ -389,7 +418,7 @@ const SignUp = (props) => (
           right: 7%;
           top: 140px;
 
-          background-color: white;
+          background-color: #2CABFB;
           z-index: -1;
 
           -webkit-box-shadow: 1px 77px 103px -71px rgba(153,153,153,1);
@@ -525,7 +554,7 @@ const SignUp = (props) => (
           box-shadow: 1px 72px 126px -71px rgba(153,153,153,1);
           padding-bottom: 10px;
           margin-bottom: 100px;
-					margin-top: 330px;
+					margin-top: 630px;
         }
 
       }
@@ -546,52 +575,19 @@ const SignUp = (props) => (
       </div>
     </div>
 
-    <div className="body-text">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div>
-
-    {/* <div className="go-to-map">
-			<div className="intro-text subheading">Visit the map to see our list of Dry Cleaners!</div>
-			<div className="body-text white">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div>
-      <Link href="/map">
-        <a><img className="arrow-icon" src="/static/arrow-right-solid.svg" alt="Icon"/></a>
-      </Link>
-
-    </div> */}
-
-
-			{/* <input placeholder="Enter your email to get notified when we near launch!" className="form-field-text" type="text" name="firstname"/> */}
-
-    {/* <div className="cta-3-wrapper">
-      <div className="card">
-        <div className="field-icon"><img className="icon" src="/static/truck-solid.svg" alt="Icon"/></div>
-        <div className="field-title">Drop-off / Pick-up</div>
-        <div className="field-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices dolor orci, id fauci.</div>
-      </div>
-      <div className="card">
-        <div className="field-icon"><img className="icon-tint" src="/static/tint-solid.svg" alt="Icon"/></div>
-        <div className="field-title">Get Them Washed</div>
-        <div className="field-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices dolor orci, id fauci.</div>
-      </div>
-      <div className="card">
-        <div className="field-icon"><img className="icon" src="/static/box-open-solid.svg" alt="Icon"/></div>
-        <div className="field-title">Recieve Laundry!</div>
-        <div className="field-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices dolor orci, id fauci.</div>
-      </div>
-    </div> */}
-
-
-
     <div className="cta-form-wrapper">
-      <div className="cta-text-wide">Ready to forget laundry forever?</div>
-      <div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div>
+      <div className="cta-text-wide">Ready to forget about laundry forever?</div>
+      {/* <div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div> */}
+      <div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize.</div>
 
 			<label className="text-label">First Name</label>
 			<input placeholder="Your first name" className="form-field-text" type="text" name="firstname"/>
 
 			<label className="text-label">Last Name</label>
-			<input placeholder="Also, your last name please" className="form-field-text" type="text" name="firstname"/>
+			<input placeholder="Your last name please" className="form-field-text" type="text" name="firstname"/>
 
 			<label className="text-label">Email</label>
-			<input placeholder="Enter your email to get notified when we near launch!" className="form-field-text" type="text" name="firstname"/>
+			<input placeholder="Enter your email" className="form-field-text" type="text" name="firstname"/>
 
 			<label className="text-label">Phone Number</label>
 			<input placeholder="234-232-6839" className="form-field-text" type="text" name="firstname"/>
@@ -605,22 +601,20 @@ const SignUp = (props) => (
 
 
 
+	    {/* <div className="go-to-map">
+				<div className="intro-text subheading">Visit the map to see our list of Dry Cleaners!</div>
+				<div className="body-text white">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences.</div>
+	      <Link href="/map">
+	        <a><img className="arrow-icon" src="/static/arrow-right-solid.svg" alt="Icon"/></a>
+	      </Link>
+
+	    </div> */}
+
+
 
 
   </Layout>
 )
-
-SignUp.getInitialProps = async function() {
-  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
-  const data = await res.json()
-
-  // console.log(data);
-  console.log(`Show data fetched. Count: ${data.length}`)
-
-  return {
-    shows: data
-  }
-}
 
 export default SignUp
 
