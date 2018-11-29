@@ -19,9 +19,6 @@ const Header = () => (
 
 		<style jsx>{`
       .header-container {
-
-
-
       	box-sizing: border-box;
       	// max-width: 90%;
       	margin: 0;
@@ -60,7 +57,7 @@ const Header = () => (
       	text-align:center;
       	display: inline-block;
       	width 100%;
-      	margin-top: 40px;
+      	margin-top: 20px;
 
       }
 

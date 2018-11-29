@@ -8,7 +8,7 @@ const mapStyle = {
 	map: {
 		width: '100%',
 		height: '100%',
-		maxHeight: '78vh',
+		maxHeight: 'calc(100% - 165px)',
 		// maxHeight: '740px',
 		overflow: 'hidden'
 	},
@@ -99,21 +99,18 @@ export class Mappy extends React.Component {
 		return (
 
 
-					<Layout>
+					<Layout overflow={true}>
 						<style jsx>{`
 							.map {
 								width: 100%;
 								height: 100%;
 								// max-height:60%;
+								// max-height: 580px;
 								// background-color: #002766;
 								overflow: hidden;
+
 							}
 
-							.loading {
-								width: 400px;
-								height: 300px;
-								background-color: red;
-							}
 
 						`}</style>
 

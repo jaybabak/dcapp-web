@@ -254,7 +254,7 @@ const Index = (props) => (
         -moz-box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
         box-shadow: 0px 2px 5px 0px rgba(212,212,212,1);
         padding-bottom: 10px;
-        margin-bottom: 150px;
+        margin-bottom: 25px;
         padding-left: 30px;
         padding-right: 30px;
 

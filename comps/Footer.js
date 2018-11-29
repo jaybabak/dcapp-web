@@ -43,7 +43,7 @@ const Footer = () => (
 		      	// max-width: 100%;
 		      	// width: 100%;
 		      	// margin: 0 auto;
-		      	padding: 40px;
+		      	padding: 15px;
 						border: 1px solid #DDD;
 
 						// -webkit-box-shadow: 2px 5px 20px -13px rgba(0,0,0,0.55);

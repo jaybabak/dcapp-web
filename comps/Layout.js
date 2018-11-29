@@ -4,9 +4,19 @@ import Footer from './Footer';
 import Head from 'next/head'
 import Button from '@material-ui/core/Button';
 
-const Layout = (props) => (
+const Layout = (props) => {
 
-	<div className="wrapper">
+	//conditional rendering of components SHOW OR HIDE FOOTER
+	// console.log(props.overflow);
+	// var showFooter = props.displayFooter;
+	//
+	// var footerRegion;
+	//
+	// if()
+
+
+
+	return (<div className="wrapper">
 
 
 		<style jsx>{`
@@ -15,6 +25,7 @@ const Layout = (props) => (
       	box-sizing: border-box;
       	margin: 0;
       	width: 100%;
+				height: 100%;
 
       	margin: 0 auto;
       	padding: 0px;
@@ -54,11 +65,11 @@ const Layout = (props) => (
 		<Footer/>
 
 
-	</div>
+	</div>)
 
 
 
-)
+}
 
 export default Layout
 
