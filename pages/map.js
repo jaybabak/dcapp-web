@@ -56,6 +56,7 @@ export class Mappy extends React.Component {
 	}
 
 	onMarkerClick = (props, marker, e) => {
+		console.log(props.store.address.address);
 		this.setState({
 			selectedPlace: props,
 			storeInfo: props.store,
@@ -64,6 +65,7 @@ export class Mappy extends React.Component {
 			activeMarker: marker,
 			showingInfoWindow: true
 		});
+
 	}
 
 	onMapClicked = (props) => {
@@ -78,7 +80,7 @@ export class Mappy extends React.Component {
 	render() {
 
 				var stores = this.state.data;
-				console.log(stores);
+				// console.log(stores);
 
 				const listItems = stores.map((store) =>
 								<Marker
@@ -125,11 +127,47 @@ export class Mappy extends React.Component {
 									lat: 25.267369,
 									lng: 51.529451
 								}}
-								zoom={14}
+								zoom={15}
 							>
 								{listItems}
 
 								<Marker
+									name={'Dolores park'}
+									position={{lat: 25.267369, lng: 51.529451}}
+									icon={{
+										url: "/static/marker_custom.png",
+										anchor: new google.maps.Point(32,52),
+										scaledSize: new google.maps.Size(64,64)
+									}}
+									// onClick={this.onMarkerClick}
+								/>
+								<Marker />
+
+								{/* <Marker
+									name={'Dolores park'}
+									position={{lat: 25.302786, lng: 51.512212}}
+									icon={{
+										url: "/static/marker_custom.svg",
+										anchor: new google.maps.Point(32,32),
+										scaledSize: new google.maps.Size(64,64)
+									}}
+									// onClick={this.onMarkerClick}
+								 />
+								<Marker /> */}
+
+								{/* <Marker
+									name={'Dolores park'}
+									position={{lat: 25.208945, lng: 51.444551}}
+									icon={{
+										url: "/static/marker_custom.svg",
+										anchor: new google.maps.Point(32,32),
+										scaledSize: new google.maps.Size(64,64)
+									}}
+									// onClick={this.onMarkerClick}
+								/>
+								<Marker /> */}
+
+								{/* <Marker
 									title={'The marker`s title will appear as a tooltip.'}
 									name={'SOMA'}
 									position={{lat: 25.262811, lng: 51.532094}}
@@ -139,51 +177,17 @@ export class Mappy extends React.Component {
 							      scaledSize: new google.maps.Size(64,64)
 							    }}
 									// onClick={this.onMarkerClick}
-								 />
-
-								<Marker
-							    name={'Dolores park'}
-							    position={{lat: 25.270398, lng: 51.524723}}
-									icon={{
-										url: "/static/marker_custom.svg",
-										anchor: new google.maps.Point(32,32),
-										scaledSize: new google.maps.Size(64,64)
-									}}
-									// onClick={this.onMarkerClick}
-								/>
-							  <Marker />
-
-								<Marker
-							    name={'Dolores park'}
-							    position={{lat: 25.302786, lng: 51.512212}}
-									icon={{
-										url: "/static/marker_custom.svg",
-										anchor: new google.maps.Point(32,32),
-										scaledSize: new google.maps.Size(64,64)
-									}}
-									// onClick={this.onMarkerClick}
-								 />
-							  <Marker />
-
-								<Marker
-							    name={'Dolores park'}
-							    position={{lat: 25.208945, lng: 51.444551}}
-									icon={{
-										url: "/static/marker_custom.svg",
-										anchor: new google.maps.Point(32,32),
-										scaledSize: new google.maps.Size(64,64)
-									}}
-									// onClick={this.onMarkerClick}
-								/>
-							  <Marker />
+								 /> */}
 
 								<InfoWindow
 				          marker={this.state.activeMarker}
 				          visible={this.state.showingInfoWindow}>
 				            <div>
 				              <h1>{this.state.selectedPlace.name}</h1>
-				              <h3>{this.state.phoneNumber}</h3>
 				              <p>{this.state.description}</p>
+											{/* <h3>{this.state.address.address}</h3> */}
+											{/* <h3>{this.state.address.address2}</h3> */}
+											<h3>{this.state.phoneNumber}</h3>
 				            </div>
 				        </InfoWindow>
 
