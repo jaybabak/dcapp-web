@@ -11,7 +11,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/sign-up": [
+    "/map": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -19,7 +19,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/map": [
+    "/sign-up": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

@@ -21,7 +21,9 @@ export class SignUp extends React.Component {
 		this.state = {
 			value: '',
 			form: {},
-			formComplete: false
+			formComplete: false,
+			serverResponseHeading: 'Thank You For Signing Up!',
+			serverResponseMessage: 'Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize.'
 		};
 
 		this.handleChange = this.handleChange.bind(this);
@@ -45,7 +47,7 @@ export class SignUp extends React.Component {
     	formData
     });
 
-		console.log(this.state.form);
+		// console.log(this.state.form);
 
 	}
 
@@ -61,7 +63,7 @@ export class SignUp extends React.Component {
 			 this.state.form.phonenumber == undefined
 		){
 
-			alert('Check the form for errors!');
+			alert('Cannot leave any fields blank!');
 			console.log(this.state.formComplete);
 		}else {
 
@@ -75,11 +77,43 @@ export class SignUp extends React.Component {
 				alert('Invalid phone number: ' + this.state.form.phonenumber);
 			}else{
 
+				var fName = this.state.form.firstname;
+				var lName = this.state.form.lastname;
+				var email = this.state.form.email;
+				var phone = this.state.form.phonenumber;
+
+				axios.get('http://localhost:5000/subscription/add', {
+					params: {
+						firstName: fName,
+						lastName: lName,
+						email: email,
+						phoneNumber: phone
+					}
+				})
+					.then(response => {
+
+						console.log(response);
+
+						if(response.data.success == false){
+							this.setState({
+								serverResponseHeading: 'Oh No! Something Is Wrong..',
+								serverResponseMessage: 'Sorry it looks like someone has alreadys igned up with that email address, hit the back button and try again?'
+							});
+						}
+						// this.setState({
+						// 	data: response.data
+						// });
+
+					})
+					.catch(function (error) {
+						console.log(error);
+				});
+
 				this.setState({formComplete: true});
 
 				// alert('yay succesful submission!');
 
-				console.log(this.state.formComplete);
+				console.log(this.state);
 
 			}
 
@@ -455,8 +489,8 @@ export class SignUp extends React.Component {
 
 				`}</style>
 
-					<div className="cta-text-wide">Thank You For Signing Up!</div>
-					<div className="cta-text-summary">Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize their digital experiences. Platform is built around Drupal and allows companies around the globe to build, operate and optimize.</div>
+					<div className="cta-text-wide">{this.state.serverResponseHeading}</div>
+					<div className="cta-text-summary">{this.state.serverResponseMessage}</div>
 
 					<div className="cta-text-summary">Visit the Map?</div>
 

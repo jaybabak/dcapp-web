@@ -7,7 +7,14 @@ import Button from '@material-ui/core/Button';
 const Layout = (props) => {
 
 	//conditional rendering of components SHOW OR HIDE FOOTER
-	// console.log(props.overflow);
+	console.log(props.overflow);
+	var hiddenOverflow = '';
+	if(props.overflow == true){
+
+		hiddenOverflow = 'overflow: hidden;';
+	}else {
+		hiddenOverflow = 'overflow: inherit';
+	}
 	// var showFooter = props.displayFooter;
 	//
 	// var footerRegion;
@@ -47,7 +54,9 @@ const Layout = (props) => {
 
 				padding-bottom: 120px;
 				min-height: 100vh;
-      }
+				${hiddenOverflow}
+
+			}
     `}</style>
 
 		<Head>
